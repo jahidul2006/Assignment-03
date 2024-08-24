@@ -1,13 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html data-theme:light>
+<html lang="en" html data-theme=light>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSIGNMENT-03</title>
     <!-- font awesome cdn -->
-     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="bg-[linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)]">
+        <!-- Navbar start here-->
+         <nav class="w-11/12 mx-auto">
+        <div class="navbar">
+            <div class="navbar-start">
+             
+              <a class="btn btn-ghost text-xl">
+                <i class="fa-solid fa-arrow-right bg-[#ABEF5F]  bg-[#ABEF5F] rounded-lg -rotate-45"></i>
+                <h2 class="font-mono  text-2xl italic font-bold ">Rinterio</h2>
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="hover:text-[rgb(139,195,74)] text-[rgb(73, 73, 73)] font-mono text-base font-semibold transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a>Services    </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out "><a>Portfolio    </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a> Blogs   </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a> Contact Us   </a></li>
+              
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="flex ">
+                <button class="lg:mr-3  h-8 w-8 border-2 rounded-full bg-[rgb(255, 255, 255)] hidden lg:block ">
+                  <i class="fa-solid fa-magnifying-glass fa-bounce"></i>
+                  
+                </button>
+                <button class="mr-2 h-8 w-8 border-2 rounded-full bg-[rgb(255, 255, 255)] hidden lg:block  ">
+                  <i class="fa-solid fa-cart-shopping fa-beat"></i>
+                </button> 
+               
+              </div>
+               <div class="h-10 w-45 border-2 bg-[#ABEF5F] hidden lg:block rounded-full">
+               <div class="font-mono italic font-semibold text-[rgb(28, 28, 28)] text-lg -mt-0 ml-1">Book Consult  <i class="fa-solid fa-arrow-right mt-1 mr-1 -rotate-45 h-6 w-6 border-2 rounded-full bg-[#1C1C1C] text-[#FFFFFF] "></i> </div>
+               <div class="">
+               
+              </div>
+                
+               </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                  <i class="fa-solid fa-bars h-8 w-8 border-1 rounded-full bg-[rgb(255, 255, 255)] py-1.5"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 gap-4">
+                  <li class="hover:text-[rgb(139,195,74)] text-[rgb(73, 73, 73)] font-mono text-base font-semibold transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a>Services    </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out "><a>Portfolio    </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a> Blogs   </a></li>
+                <li class="hover:text-[rgb(139,198,75)] text-gray-500 font-mono font-medium text-base  transition-colors duration-300 ease-in-out"><a> Contact Us   </a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navbar ends here -->
+
+        <!-- Banner section starts here -->
+         <div class="w-1/2 mx-auto">
+          <img class=" m-auto" src="assets/banner.png" alt="">
+         </div>
+         <div class="">
+          <h1 class="font-mono  font-bold italic text-center text-2xl lg:text-5xl my-4 w-10/12 lg:w-11/12 m-auto ">A barn house of this design has a <br>striking appearance  </h1>
+         </div>
+         <div class="font-mono font-bold italic text-center w-9/12 m-auto text-gray-500 lg:w-8/12">
+          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+         </div>
+        
+         <button class="border-2 flex mt-2 h-12 w-80 bg-[#ABEF5F] m-auto justify-center lg:w-52 rounded-full shadow-sm ">
+            <div class="font-mono italic font-bold text-xl ml-0 mt-2">View Details</div>
+            <div class="text-black-500 h-8 w-8  rounded-full bg-lime-500 mt-2 ml-2  ">
+              <i class="fa-solid fa-arrow-right  mt-0.5 -rotate-45 text-xl"></i>
+            </div>
+         </button>
+        <!-- Banner section eands here -->
     
+      </header>
+
+      <main>
+        <!-- About sections start -->
+      
+        <div class="bg-gray-200 mt-10 w-full ">
+          <div class="flex w-11/12 m-auto py-10 ">
+            <!-- about text -->
+             <img src="assets/Vector.png" alt="">
+            <div class="ml-7">
+              <button class=" flex py-0.5 mb-3 h-8 justify-center w-32 rounded-full bg-white shadow-sm">
+                <i class="fa-solid fa-arrow-right fa-beat-fade mt-1.5 pr-2"></i>
+                <h2 class=" font-mono font-bold italic text-lg">About Us</h2>
+                
+              </button>
+              <!-- name-1 -->
+              <div class="border-4 border-stone-300  mb-3">
+                <h2 class="font-mono font-bold italic text-4xl text-[#212121]">We design thoughtful,<br> liveable spaces</h2>
+                <p class="font-mono font-semibold italic text-base text-gray-600">The barn house captivates with its blend of  rustic<br> charm and  modern sophistication, featuring  weathered wood, sleek metal accents.</p>
+                  
+              </div>
+               <!-- name-2 -->
+              <div class="border-4 border-stone-300 h-1/4 content-center flex mb-3">
+                <div class=""><img class="items-center" src="assets/commercial.png" alt=""></div>
+                <div class="">
+                <h2 class="font-mono font-bold italic text-2xl">Commercial</h2>
+              <p class="font-mono font-semibold italic text-base text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p> </div>
+           
+            </div>
+             <!-- name-3 -->
+              <div class="border-4 border-stone-300 h-1/4 mb-3">
+                <h2 class="font-mono font-bold italic text-2xl">Residential</h2>
+                <p class="font-mono font-semibold italic text-base text-gray-600">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            <!-- image  -->
+            <div class=" mt-4"><img class="w-10/12 h-11/12 ml-10 " src="assets/Rectangle.png" alt=""></div>
+          </div>
+        </div>
+          <!-- About sections ends -->
+      </main>
 </body>
 </html>
