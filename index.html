@@ -13,7 +13,25 @@
 
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: "#da373d",
+          green: "#ABEF5F",
+          blck: "#212121",
+        },
+        fontFamily: {
+          Manrope: ["Manrope", "sans-serif"],
+        },
+        backgroundImage: {
+          contact:"url('./assets/bg.jpg')",
+        },
+      },
+    },
+  };
+</script>
 </head>
 <body>
     <header class="bg-[linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%)]">
@@ -21,7 +39,7 @@
          <nav class="w-11/12 mx-auto">
         <div class="navbar">
             <div class="navbar-start">
-              <a class="btn btn-ghost text-xl">
+              <a href="#" class="btn btn-ghost text-xl">
                 <i class="fa-solid fa-arrow-right bg-[#ABEF5F]  bg-[#ABEF5F] rounded-lg -rotate-45"></i>
                 <a href="#rinterio">
                 <h2 class="font-mono  text-2xl italic font-bold ">Rinterio </h2>
@@ -79,7 +97,7 @@
 
         <!-- Banner section starts here -->
          <div class="w-1/2 mx-auto">
-          <img class=" m-auto" src="assets/banner.png" alt="">
+          <img class=" m-auto  " src="assets/banner.png" alt="">
          </div>
          <div class="">
           <h1 class="font-mono  font-bold italic text-center text-2xl lg:text-5xl my-4 w-10/12 lg:w-11/12 m-auto ">A barn house of this design has a <br>striking appearance  </h1>
@@ -139,7 +157,7 @@
               </div>
             </div>
             <!-- image  -->
-            <div class=" mt-4"><img class="lg:w-11/12 m-auto w-5/6  h-11/12 ml-10 rounded-lg " src="assets/Rectangle.png" alt=""></div>
+            <div class=" mt-4"><img class="lg:w-11/12 m-auto w-5/6  h-11/12 ml-8 rounded-lg " src="assets/Rectangle.png" alt=""></div>
           </div>
         </div>
           <!-- About sections ends -->
@@ -281,7 +299,7 @@
           <!-- Protfolio section ends -->
 
           <!-- rentorio section starts here -->
-           <section class="bg-gray-200 m-auto pb-20 id="rinterio">
+           <section class="bg-gray-200 m-auto pb-20" id="rinterio">
             <div class="w-11/12 m-auto">
               <div class="flex  sm:justify-center  justify-center pt-4">
                 <button class="flex py-0.5 mb-3 mt-14 h-8 justify-center w-44 rounded-full bg-lime-100 shadow-sm">                       
@@ -395,17 +413,20 @@
           <!-- rentorio section ends here -->
 
           <!-- contact section start -->
-
-          <section class="mt-4 bg-texture ">
-            
-            
-            
-              
+           <section class="bg-contact bg-cover w-full h-screen mt-4">
+            <!-- contact form -->
+             <div class=" w-1/4 m-auto">
+                <div class="">
+                  <input type="text" placeholder="First Name*" class="w-full p-4 border-none rounded-3xl">
             </div>
+             
+             </div>
+             <div class=""></div>
+            <!-- contact form ends -->
 
-           
-
-          </section>
+           </section>
+          
+          
           <!-- contact section ends -->
       </main>
 </body>
