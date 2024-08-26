@@ -6,6 +6,7 @@ tailwind.config = {
         clifford: '#da373d',
       }
     }
+   
   }
 }
 </script>
